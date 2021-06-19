@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -2584,7 +2584,7 @@ design rules under a new name.</description>
 <wire x1="104.06" y1="62.14" x2="104.06" y2="63.4" width="0.5" layer="1"/>
 <wire x1="104.06" y1="63.4" x2="104.07" y2="63.41" width="0.5" layer="1"/>
 </signal>
-<signal name="GND" airwireshidden="yes">
+<signal name="GND">
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="1"/>
 <contactref element="R9" pad="1"/>
@@ -2781,7 +2781,7 @@ design rules under a new name.</description>
 <wire x1="87.23" y1="20.72" x2="87.23" y2="23.08" width="0.5" layer="1"/>
 <wire x1="88.75" y1="24.6" x2="88.75" y2="25.8" width="0.5" layer="1"/>
 <wire x1="87.23" y1="23.08" x2="88.75" y2="24.6" width="0.5" layer="1"/>
-<polygon width="0.05" layer="1" isolate="0.5" orphans="yes">
+<polygon width="0.05" layer="1" isolate="0.5">
 <vertex x="50.35" y="14.9"/>
 <vertex x="33.7" y="14.9"/>
 <vertex x="33.7" y="14.95"/>
@@ -2791,7 +2791,7 @@ design rules under a new name.</description>
 <vertex x="143.65" y="76"/>
 <vertex x="143.65" y="14.9"/>
 </polygon>
-<polygon width="0.05" layer="16" pour="cutout" isolate="0.6096" orphans="yes" rank="2">
+<polygon width="0.05" layer="16" isolate="0.5">
 <vertex x="34.45" y="14.9"/>
 <vertex x="33.7" y="14.9"/>
 <vertex x="33.7" y="16.2"/>
@@ -2901,8 +2901,6 @@ design rules under a new name.</description>
 <wire x1="74.53" y1="74.06" x2="75.5" y2="74.06" width="0.5" layer="1"/>
 <wire x1="74.53" y1="74.06" x2="74.53" y2="75.35" width="0.5" layer="1"/>
 <wire x1="74.53" y1="75.35" x2="74.55" y2="75.35" width="0.5" layer="1"/>
-<wire x1="51.55" y1="71.4" x2="50.95" y2="71.4" width="0" layer="19" extent="1-16"/>
-<wire x1="42.15" y1="26.65" x2="42.75" y2="26.65" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="PC0">
 <contactref element="C2" pad="1"/>
