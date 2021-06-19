@@ -14053,13 +14053,13 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <instance part="GND13" gate="1" x="5.08" y="43.18" smashed="yes">
 <attribute name="VALUE" x="2.54" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="PREV" gate="G$1" x="10.16" y="78.74" smashed="yes" rot="R270">
-<attribute name="NAME" x="7.62" y="81.28" size="1.778" layer="95"/>
-<attribute name="VALUE" x="7.62" y="74.295" size="1.778" layer="96"/>
+<instance part="PREV" gate="G$1" x="12.7" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="76.2" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="15.24" y="83.185" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="CFG" gate="G$1" x="10.16" y="68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="7.62" y="71.12" size="1.778" layer="95"/>
-<attribute name="VALUE" x="7.62" y="64.135" size="1.778" layer="96"/>
+<instance part="CFG" gate="G$1" x="12.7" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="68.58" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="15.24" y="75.565" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND14" gate="1" x="5.08" y="66.04" smashed="yes">
 <attribute name="VALUE" x="2.54" y="63.5" size="1.778" layer="96"/>
@@ -14400,13 +14400,6 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <wire x1="10.16" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PREV" gate="G$1" pin="1"/>
-<pinref part="CFG" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="78.74" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<junction x="5.08" y="68.58"/>
-</segment>
-<segment>
 <pinref part="LEARN" gate="G$1" pin="2"/>
 <pinref part="NEXT" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="25.4" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
@@ -14423,6 +14416,14 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <pinref part="MIDI_OUT" gate="G$1" pin="1"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <wire x1="27.94" y1="-48.26" x2="30.48" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CFG" gate="G$1" pin="2"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="5.08" y1="71.12" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="71.12" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<junction x="5.08" y="71.12"/>
+<pinref part="PREV" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PC0" class="0">
@@ -14821,16 +14822,16 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <segment>
 <pinref part="U1" gate="G$1" pin="PC13"/>
 <wire x1="20.32" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="CFG" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="73.66" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="CFG" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="73.66" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC12"/>
 <wire x1="20.32" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PREV" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="76.2" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="PREV" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="78.74" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
