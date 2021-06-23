@@ -14110,19 +14110,19 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <attribute name="VALUE" x="89.535" y="104.14" size="1.778" layer="96" rot="R270"/>
 <attribute name="NAME" x="89.535" y="114.3" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="MIDI_OUT" gate="G$1" x="12.7" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="12.7" y="-37.465" size="1.778" layer="96"/>
-<attribute name="NAME" x="2.54" y="-37.465" size="1.778" layer="95"/>
+<instance part="MIDI_OUT" gate="G$1" x="12.7" y="-48.26" smashed="yes" rot="R180">
+<attribute name="VALUE" x="12.7" y="-59.055" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="22.86" y="-59.055" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="GND33" gate="1" x="30.48" y="-50.8" smashed="yes">
-<attribute name="VALUE" x="27.94" y="-53.34" size="1.778" layer="96"/>
+<instance part="GND33" gate="1" x="-5.08" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="-7.62" y="-53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="-7.62" y="-45.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="-3.81" y="-47.2186" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-3.81" y="-42.418" size="1.778" layer="96" rot="R180"/>
+<instance part="R29" gate="G$1" x="-7.62" y="-55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="-3.81" y="-57.3786" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-3.81" y="-52.578" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V5" gate="G$1" x="-12.7" y="-40.64" smashed="yes">
-<attribute name="VALUE" x="-15.24" y="-45.72" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V5" gate="G$1" x="-12.7" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="-55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14415,7 +14415,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <segment>
 <pinref part="MIDI_OUT" gate="G$1" pin="1"/>
 <pinref part="GND33" gate="1" pin="GND"/>
-<wire x1="27.94" y1="-48.26" x2="30.48" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-48.26" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CFG" gate="G$1" pin="2"/>
@@ -14801,7 +14801,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-53.34" x2="-12.7" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -14903,29 +14903,37 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <wire x1="101.6" y1="101.6" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="99.06" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
 <junction x="101.6" y="99.06"/>
-<pinref part="MIDI_IN" gate="G$1" pin="3"/>
-<wire x1="101.6" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="MIDI_IN" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="116.84" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$53" class="0">
+<net name="N$55" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="MIDI_IN" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="116.84" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="119.38" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="119.38" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="MIDI_IN" gate="G$1" pin="3"/>
+<wire x1="81.28" y1="86.36" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="MIDI_OUT" gate="G$1" pin="2"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="3"/>
+<wire x1="0" y1="-50.8" x2="0" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="0" y1="-45.72" x2="-2.54" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="0" y1="-55.88" x2="-2.54" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="N$53" class="0">
 <segment>
-<pinref part="MIDI_OUT" gate="G$1" pin="3"/>
 <pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="-45.72" x2="38.1" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="-45.72" x2="38.1" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-50.8" x2="25.4" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
